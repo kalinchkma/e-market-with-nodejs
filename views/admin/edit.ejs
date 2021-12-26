@@ -1,0 +1,35 @@
+<!-- header -->
+<%- include('../includes/header') -%>
+<!-- shop item -->
+<section class="add-product-box p-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-3">
+                    <form method="POST" action="/admin/edit-product">
+                        <input type="hidden" name="id" value="<%- prod.id -%>">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" name="title" value="<%- prod.title -%>" id="prod-title">
+                        </div>
+                        <div class="mb-3">
+
+                            <input value="<%- prod.price -%>" type="number" name="price" class="form-control" id="price">
+                        </div>
+                        <div class="mb-3">
+   
+                            <input value="<%- prod.imageUrl -%>" type="text" name="image" class="form-control" id="image">
+                        </div>
+                        <div class="mb-3">
+
+                            <textarea class="form-control" name="desc" id="desc" rows="3"><%- prod.description -%></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Done</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- footer -->
+<%- include('../includes/footer') -%>
+
+
+  

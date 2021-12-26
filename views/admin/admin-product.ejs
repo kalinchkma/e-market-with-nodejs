@@ -1,0 +1,37 @@
+<!-- header -->
+<%- include('../includes/header') -%>
+<!-- shop item -->
+<section class="shop-item my-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <!--  -->
+                  <% for (product of prods) {%>
+                    <div class="col-md-4 my-2">
+                        <div class="card w-100">
+                            <img src="<%= product.imageUrl %>" class="card-img-top product-image" alt="product-images">
+                            <div class="card-body">
+                              <h5 class="card-title"><%= product.title %></h5>
+                              <p class="card-text"><%= product.description %></p>
+                              <p class="text-danger"><%= product.price %> $</p>
+                              <a href="/admin/edit-product/<%= product.id %>?edit=hunter&another=work" class="btn btn-dark text-light">Edit</a>
+                              <a href="/admin/delete-product/<%= product.id %>?delete=true" class="btn btn-dark text-light">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+                 <% } %>
+               
+                    <!--  -->
+                </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- footer -->
+<%- include('../includes/footer') -%>
+
+
+  

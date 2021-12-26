@@ -1,0 +1,35 @@
+<!-- header -->
+<%- include('../includes/header') -%>
+<!-- shop item -->
+<section class="shop-item my-3">
+    <div class="container">
+        <div class="row">
+        
+                <!--  -->
+            
+                <div class="col-md-6 offset-3 my-3">
+                    <div class="card w-100">
+                        <img src="<%= prod.imageUrl %>" class="card-img-top product-image" alt="product-images">
+                        <div class="card-body">
+                            <h5 class="card-title"><%= prod.title %></h5>
+                            <p class="card-text"><%= prod.description %></p>
+                            <p class="text-danger"><%= prod.price %>$</p>
+                            <%- 
+                            include('../includes/add-to-cart')
+                            -%>
+                        </div>
+                    </div>
+                </div>
+            
+            
+                <!--  -->
+                    
+            </div>
+        </div>
+    </div>
+</section>
+<!-- footer -->
+<%- include('../includes/footer') -%>
+
+
+  

@@ -1,0 +1,39 @@
+
+/**
+* header css
+*/
+header {
+    background: rgb(104, 105, 105);
+}
+
+/*
+banner css
+*/
+.banner-section {
+    background-image: url('/images/banner-img-3.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.banner-section .slider-box {
+    height: 400px;
+}
+/*
+    shop item css
+*/
+.shop-item {
+
+}
+.shop-item .product-image {
+    height: 400px;
+}
+/*
+add-product-box
+*/
+/**
+footer css
+*/
+footer {
+    padding: 10px 0px;
+    background: rgb(13, 22, 39)
+}
